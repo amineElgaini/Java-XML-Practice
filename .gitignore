@@ -1,0 +1,21 @@
+# Java compiled files (xml-practice)
+*.class
+
+# Maven build output (xml-jackson)
+target/
+
+# Files made by our programs
+newbooks.xml
+output.xml
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Linux
+*~
+.directory
