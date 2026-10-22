@@ -1,0 +1,14 @@
+<!ELEMENT Matieres (Matiere+)>
+<!ELEMENT Matiere (Intitule,Professeur,Notes*,VH,Objectifs?)>
+<!ELEMENT Intitule (#PCDATA)>
+<!ELEMENT Professeur (#PCDATA)>
+<!ELEMENT Notes (NoteDS|NoteExam)>
+<!ELEMENT VH EMPTY>
+<!ELEMENT Objectifs (#PCDATA|Objectif)*>
+<!ELEMENT NoteDS (#PCDATA)>
+<!ELEMENT NoteExam (#PCDATA)>
+<!ELEMENT Objectif (#PCDATA)>
+<!ATTLIST Matiere CodMat ID #REQUIRED>
+<!ATTLIST NoteDS Coeff NMTOKEN #REQUIRED>
+<!ATTLIST NoteExam Coeff NMTOKEN #REQUIRED>
+<!ATTLIST VH NbHeures NMTOKEN #IMPLIED>

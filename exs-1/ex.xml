@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Etudieants SYSTEM"example1.dtd">
+
+<Etudieants Responsable="K1234">
+    <Etudieant CNE="K1234" Sexe="Masculin">
+        <Nom>
+            Amine
+        </Nom>
+
+        <Prenom>
+            Elgaini
+        </Prenom>
+        
+        <Photo Description="my photo" L="60" H="80" Srouce="./image.png"/ Type="JPG">
+    </Etudieant>
+</Etudieants>
+
