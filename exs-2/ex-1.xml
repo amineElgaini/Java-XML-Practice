@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE Matieres SYSTEM "Matieres.dtd"> --> 
+<!DOCTYPE Matieres [
+  <!ELEMENT Matieres (Matiere+)>
+  <!ELEMENT Matiere (Intitule,Professeur,Notes*,VH,Objectifs?)>
+  <!ELEMENT Intitule (#PCDATA)>
+  <!ELEMENT Professeur (#PCDATA)>
+  <!ELEMENT Notes (NoteDS|NoteExam)>
+  <!ELEMENT VH EMPTY>
+  <!ELEMENT Objectifs (#PCDATA|Objectif)*>
+  <!ELEMENT NoteDS (#PCDATA)>
+  <!ELEMENT NoteExam (#PCDATA)>
+  <!ELEMENT Objectif (#PCDATA)>
+  <!-- <!ATTLIST Matiere CodMat ID #REQUIRED> -->
+  <!ENTITY % codeUnique "ID #REQUIRED">
+    <!ATTLIST Matiere CodMat %codeUnique;>
+  <!ATTLIST NoteDS Coeff NMTOKEN #REQUIRED>
+  <!ATTLIST NoteExam Coeff NMTOKEN #REQUIRED>
+  <!ATTLIST VH NbHeures NMTOKEN #IMPLIED>
+]>
+<Matieres>
+  <Matiere CodMat="M1">
+    <Intitule>XML</Intitule>
+    <Professeur>Chekry</Professeur>
+    <Notes>
+      <NoteDS Coeff="1">15</NoteDS>
+    </Notes>
+    <VH NbHeures="24"/>
+    <Objectifs>Apprendre <Objectif>DTD</Objectif></Objectifs>
+  </Matiere>
+
+  <Matiere CodMat="M2">
+    <Intitule>Java</Intitule>
+    <Professeur>Ali</Professeur>
+    <VH NbHeures="30"/>
+  </Matiere>
+
+  <Matiere CodMat="M3">
+    <Intitule>SQL</Intitule>
+    <Professeur>Fatima</Professeur>
+    <Notes>
+      <NoteExam Coeff="2">16</NoteExam>
+    </Notes>
+    <VH NbHeures="20"/>
+  </Matiere>
+
+  <Matiere CodMat="M4">
+    <Intitule>JavaScript</Intitule>
+    <Professeur>Ahmed</Professeur>
+    <VH NbHeures="25"/>
+  </Matiere>
+
+  <Matiere CodMat="M5">
+    <Intitule>Reseaux</Intitule>
+    <Professeur>Samira</Professeur>
+    <VH/>
+  </Matiere>
+</Matieres>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Filiere SYSTEM "filiers.dtd">
+
+<Filiere promotion="2026-2027" delegue="E001">
+
+  <Etudiant NumInscription="E001">
+    <Sexe>Masculin</Sexe>
+    <Nom>Amine</Nom>
+    <Prenom>Ali</Prenom>
+    <Telephones>
+      <Telephone>0612345678</Telephone>
+    </Telephones>
+    <Emails>
+      <Email>amine@gmail.com</Email>
+    </Emails>
+    <DateNaissance>
+      <Jour>15</Jour>
+      <Mois>05</Mois>
+      <Annee>2005</Annee>
+    </DateNaissance>
+    <Adresses>
+      <Adresse>
+        <Rue>Hassan II</Rue>
+        <Numero>12</Numero>
+        <Ville>Safi</Ville>
+      </Adresse>
+    </Adresses>
+    <Photo source="photos/amine.png"/>
+  </Etudiant>
+
+  <Etudiant NumInscription="E002">
+    <Sexe>Feminin</Sexe>
+    <Nom>Fatima</Nom>
+    <Prenom>Zahra</Prenom>
+    <Telephones>
+      <Telephone type="fixe">0524467890</Telephone>
+    </Telephones>
+    <Emails>
+      <Email type="academique">fatima@etu.ma</Email>
+    </Emails>
+    <DateNaissance>
+      <Jour>20</Jour>
+      <Mois>08</Mois>
+      <Annee>2004</Annee>
+    </DateNaissance>
+    <Adresses>
+      <Adresse>
+        <Rue>Mohammed V</Rue>
+        <Numero>25</Numero>
+        <Ville>Safi</Ville>
+      </Adresse>
+    </Adresses>
+    <Photo source="photos/fatima.jpg" format="jpg"/>
+  </Etudiant>
+
+</Filiere>

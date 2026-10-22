@@ -1,0 +1,39 @@
+<!ELEMENT Filiere (Etudiant+)>
+<!ATTLIST Filiere
+    promotion CDATA #REQUIRED
+    delegue IDREF #REQUIRED>
+
+<!ELEMENT Etudiant (
+    Sexe, Nom, Prenom, Telephones*, Emails*,
+    DateNaissance, Adresses+, Photo
+)>
+<!ATTLIST Etudiant
+    NumInscription ID #REQUIRED>
+
+<!ELEMENT Sexe (#PCDATA)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Prenom (#PCDATA)>
+
+<!ELEMENT Telephones (Telephone+)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ATTLIST Telephone type (GSM|fixe) "GSM">
+
+<!ELEMENT Emails (Email+)>
+<!ELEMENT Email (#PCDATA)>
+<!ATTLIST Email type (personnel|academique) "personnel">
+
+<!ELEMENT DateNaissance (Jour,Mois,Annee)>
+<!ELEMENT Jour (#PCDATA)>
+<!ELEMENT Mois (#PCDATA)>
+<!ELEMENT Annee (#PCDATA)>
+
+<!ELEMENT Adresses (Adresse+)>
+<!ELEMENT Adresse (Rue,Numero,Ville)>
+<!ELEMENT Rue (#PCDATA)>
+<!ELEMENT Numero (#PCDATA)>
+<!ELEMENT Ville (#PCDATA)>
+
+<!ELEMENT Photo EMPTY>
+<!ATTLIST Photo
+    source CDATA #REQUIRED
+    format (jpg|png) "png">
